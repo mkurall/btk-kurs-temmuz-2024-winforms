@@ -42,6 +42,7 @@
             btnBaslat = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            lblKazanan = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -177,11 +178,22 @@
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
+            // lblKazanan
+            // 
+            lblKazanan.AutoSize = true;
+            lblKazanan.Font = new Font("Segoe UI", 16F);
+            lblKazanan.Location = new Point(195, 413);
+            lblKazanan.Name = "lblKazanan";
+            lblKazanan.Size = new Size(90, 37);
+            lblKazanan.TabIndex = 4;
+            lblKazanan.Text = "label1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(476, 420);
+            ClientSize = new Size(476, 499);
+            Controls.Add(lblKazanan);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnBaslat);
@@ -220,5 +232,6 @@
         private Button btnBaslat;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Label lblKazanan;
     }
 }

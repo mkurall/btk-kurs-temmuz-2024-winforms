@@ -41,14 +41,14 @@ namespace d04_tic_tac_toe
         {
             Image img = siraKimde == 0 ?  pictureBox1.Image : pictureBox2.Image;
 
-            if (btn00.Image == img && btn01.Image == img && btn02.Image == img ||
-                btn00.Image == img && btn11.Image == img && btn22.Image == img ||
-                btn00.Image == img && btn10.Image == img && btn20.Image == img ||
-                btn01.Image == img && btn11.Image == img && btn21.Image == img ||
-                btn02.Image == img && btn12.Image == img && btn22.Image == img ||
-                btn10.Image == img && btn11.Image == img && btn12.Image == img ||
-                btn20.Image == img && btn21.Image == img && btn22.Image == img ||
-                btn02.Image == img && btn11.Image == img && btn20.Image == img)
+            if (btn00.BackgroundImage == img && btn01.BackgroundImage == img && btn02.BackgroundImage == img ||
+                btn00.BackgroundImage == img && btn11.BackgroundImage == img && btn22.BackgroundImage == img ||
+                btn00.BackgroundImage == img && btn10.BackgroundImage == img && btn20.BackgroundImage == img ||
+                btn01.BackgroundImage == img && btn11.BackgroundImage == img && btn21.BackgroundImage == img ||
+                btn02.BackgroundImage == img && btn12.BackgroundImage == img && btn22.BackgroundImage == img ||
+                btn10.BackgroundImage == img && btn11.BackgroundImage == img && btn12.BackgroundImage == img ||
+                btn20.BackgroundImage == img && btn21.BackgroundImage == img && btn22.BackgroundImage == img ||
+                btn02.BackgroundImage == img && btn11.BackgroundImage == img && btn20.BackgroundImage == img)
             return true;
 
             return false;
@@ -66,7 +66,8 @@ namespace d04_tic_tac_toe
                 btnTiklanan.BackgroundImageLayout = ImageLayout.Stretch;
                 btnTiklanan.Enabled = false;//pasif
                 //kazandým mý? kontrol et
-
+                if (KontrolEt())
+                    lblKazanan.Text = "1.OYUNCU KAZANDI";
 
                 siraKimde = 1;
             }
@@ -76,7 +77,8 @@ namespace d04_tic_tac_toe
                 btnTiklanan.BackgroundImageLayout = ImageLayout.Stretch;
                 btnTiklanan.Enabled = false;
 
-
+                if (KontrolEt())
+                    lblKazanan.Text = "2.OYUNCU KAZANDI";
 
                 siraKimde = 0;
             }
