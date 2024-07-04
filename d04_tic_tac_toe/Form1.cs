@@ -77,6 +77,16 @@ namespace d04_tic_tac_toe
             btn20.Enabled = btn21.Enabled = btn22.Enabled = false;
         }
 
+        bool BittiMi()
+        {
+            if (btn00.Enabled == false && btn01.Enabled == false && btn02.Enabled == false &&
+            btn10.Enabled == false && btn11.Enabled == false && btn12.Enabled == false &&
+            btn20.Enabled == false && btn21.Enabled == false && btn22.Enabled == false)
+                return true;
+            else
+                return false;
+        }
+
         private void btn00_Click(object sender, EventArgs e)
         {
             //bütün butonlar týklandýðýndA burasý çalýþýyorsa
@@ -96,7 +106,7 @@ namespace d04_tic_tac_toe
                     return;
                 }
 
-                siraKimde = 1;
+                siraKimde = 1;//sonraki oyuncuya sýra geçti
             }
             else
             {
@@ -111,8 +121,16 @@ namespace d04_tic_tac_toe
                     return;
                 }
 
-                siraKimde = 0;
+                siraKimde = 0;//sonraki oyuncuya sýra geçti
             }
+
+            if(BittiMi())
+            {
+                lblKazanan.Text = "BERABERE";
+                Bitir();
+                return;
+            }
+
 
             SiraGoster();
         }

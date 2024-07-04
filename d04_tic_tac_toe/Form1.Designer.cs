@@ -49,6 +49,7 @@
             // 
             // btn00
             // 
+            btn00.Enabled = false;
             btn00.Location = new Point(99, 117);
             btn00.Name = "btn00";
             btn00.Size = new Size(90, 90);
@@ -58,6 +59,7 @@
             // 
             // btn01
             // 
+            btn01.Enabled = false;
             btn01.Location = new Point(195, 117);
             btn01.Name = "btn01";
             btn01.Size = new Size(90, 90);
@@ -67,6 +69,7 @@
             // 
             // btn02
             // 
+            btn02.Enabled = false;
             btn02.Location = new Point(291, 117);
             btn02.Name = "btn02";
             btn02.Size = new Size(90, 90);
@@ -76,6 +79,7 @@
             // 
             // btn10
             // 
+            btn10.Enabled = false;
             btn10.Location = new Point(99, 213);
             btn10.Name = "btn10";
             btn10.Size = new Size(90, 90);
@@ -85,6 +89,7 @@
             // 
             // btn11
             // 
+            btn11.Enabled = false;
             btn11.Location = new Point(195, 213);
             btn11.Name = "btn11";
             btn11.Size = new Size(90, 90);
@@ -94,6 +99,7 @@
             // 
             // btn12
             // 
+            btn12.Enabled = false;
             btn12.Location = new Point(291, 213);
             btn12.Name = "btn12";
             btn12.Size = new Size(90, 90);
@@ -103,6 +109,7 @@
             // 
             // btn20
             // 
+            btn20.Enabled = false;
             btn20.Location = new Point(99, 309);
             btn20.Name = "btn20";
             btn20.Size = new Size(90, 90);
@@ -112,6 +119,7 @@
             // 
             // btn21
             // 
+            btn21.Enabled = false;
             btn21.Location = new Point(195, 309);
             btn21.Name = "btn21";
             btn21.Size = new Size(90, 90);
@@ -121,6 +129,7 @@
             // 
             // btn22
             // 
+            btn22.Enabled = false;
             btn22.Location = new Point(291, 309);
             btn22.Name = "btn22";
             btn22.Size = new Size(90, 90);
