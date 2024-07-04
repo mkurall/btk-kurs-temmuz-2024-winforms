@@ -15,9 +15,12 @@ namespace d05_zil_saatleri
 
             DateTime? bulunan = EnYakinSaatBul(saat);
 
-            if(bulunan!=null)//burada null gelmemiþ
+            if (bulunan != null)//burada null gelmemiþ
             {
                 lblEnYakinSaat.Text = bulunan?.ToString("T");
+
+                TimeSpan? kalanSure = bulunan - saat;
+                lblKalanSure.Text = $"-{kalanSure:hh\\:mm\\:ss}";
             }
             else
             { //deðer null gelmiþ
@@ -28,10 +31,11 @@ namespace d05_zil_saatleri
         //? null olabilir operatörü
         DateTime? EnYakinSaatBul(DateTime aranan)
         {
-            for(int i = 0; i < lbSaatler.Items.Count; i++) { 
-            
+            for (int i = 0; i < lbSaatler.Items.Count; i++)
+            {
+
                 string str = lbSaatler.Items[i].ToString();
-                
+
                 DateTime oncekiSaat = DateTime.Parse(str);
 
                 if (aranan < oncekiSaat)
@@ -45,7 +49,8 @@ namespace d05_zil_saatleri
         {    //         1
             //[14:30, 14:50, 16:40]
 
-            for (int i = 0; i < lbSaatler.Items.Count; i++) {
+            for (int i = 0; i < lbSaatler.Items.Count; i++)
+            {
 
                 string saat = lbSaatler.Items[i].ToString();
 
@@ -61,8 +66,13 @@ namespace d05_zil_saatleri
                 }
             }
 
-            
+
             lbSaatler.Items.Add(txtSaat.Text);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
