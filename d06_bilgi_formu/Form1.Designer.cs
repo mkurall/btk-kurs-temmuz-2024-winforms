@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
             label2 = new Label();
             txtAd = new TextBox();
             label3 = new Label();
@@ -60,16 +60,6 @@
             panel1.Size = new Size(600, 98);
             panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F);
-            label1.Location = new Point(104, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(389, 54);
-            label1.TabIndex = 0;
-            label1.Text = "Kişisel Bilgiler Formu";
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.user__1_;
@@ -79,6 +69,16 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 24F);
+            label1.Location = new Point(104, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(389, 54);
+            label1.TabIndex = 0;
+            label1.Text = "Kişisel Bilgiler Formu";
             // 
             // label2
             // 
@@ -207,6 +207,7 @@
             btnKaydet.TabIndex = 6;
             btnKaydet.Text = "Kaydet";
             btnKaydet.UseVisualStyleBackColor = false;
+            btnKaydet.Click += btnKaydet_Click;
             // 
             // Form1
             // 
