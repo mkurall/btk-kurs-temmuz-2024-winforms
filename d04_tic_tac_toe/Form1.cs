@@ -35,7 +35,6 @@ namespace d04_tic_tac_toe
                 lblOyuncu1.ForeColor = Color.Black;
             }
         }
-       
         bool KontrolEt()
         {
             Image img = siraKimde == 0 ?  pictureBox1.Image : pictureBox2.Image;
@@ -76,7 +75,6 @@ namespace d04_tic_tac_toe
             btn10.Enabled = btn11.Enabled = btn12.Enabled =
             btn20.Enabled = btn21.Enabled = btn22.Enabled = false;
         }
-
         bool BittiMi()
         {
             if (btn00.Enabled == false && btn01.Enabled == false && btn02.Enabled == false &&
@@ -130,7 +128,6 @@ namespace d04_tic_tac_toe
                 Bitir();
                 return;
             }
-
 
             SiraGoster();
         }
