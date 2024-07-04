@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d01_merhaba_dunya", "d01_me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d02_iki_sayi_topla", "d02_iki_sayi_topla\d02_iki_sayi_topla.csproj", "{AD0B59B4-BD10-46AA-8F79-CC4069388B66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d03_askerlik_durumu", "d03_askerlik_durumu\d03_askerlik_durumu.csproj", "{B54AA0D6-D922-4FCF-B29C-E802EB0E40C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD0B59B4-BD10-46AA-8F79-CC4069388B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD0B59B4-BD10-46AA-8F79-CC4069388B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD0B59B4-BD10-46AA-8F79-CC4069388B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54AA0D6-D922-4FCF-B29C-E802EB0E40C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54AA0D6-D922-4FCF-B29C-E802EB0E40C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54AA0D6-D922-4FCF-B29C-E802EB0E40C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54AA0D6-D922-4FCF-B29C-E802EB0E40C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
