@@ -13,8 +13,7 @@ namespace d04_tic_tac_toe
 
         private void btnBaslat_Click(object sender, EventArgs e)
         {
-            siraKimde = 0;
-            SiraGoster();
+            Baslat();
         }
 
         void SiraGoster()
@@ -53,6 +52,30 @@ namespace d04_tic_tac_toe
 
             return false;
         }
+        void Baslat()
+        {
+            siraKimde = 0;
+            SiraGoster();
+
+            btn00.Enabled = btn01.Enabled = btn02.Enabled =
+            btn10.Enabled = btn11.Enabled = btn12.Enabled =
+            btn20.Enabled = btn21.Enabled = btn22.Enabled = true;
+
+            btn00.BackgroundImage = btn01.BackgroundImage = btn02.BackgroundImage =
+            btn10.BackgroundImage = btn11.BackgroundImage = btn12.BackgroundImage =
+            btn20.BackgroundImage = btn21.BackgroundImage = btn22.BackgroundImage = null;
+        }
+        void Bitir()
+        {
+            lblOyuncu1.BackColor = Color.Transparent;
+            lblOyuncu1.ForeColor = Color.Black;
+            lblOyuncu2.BackColor = Color.Transparent;
+            lblOyuncu2.ForeColor = Color.Black;
+
+            btn00.Enabled = btn01.Enabled = btn02.Enabled =
+            btn10.Enabled = btn11.Enabled = btn12.Enabled =
+            btn20.Enabled = btn21.Enabled = btn22.Enabled = false;
+        }
 
         private void btn00_Click(object sender, EventArgs e)
         {
@@ -67,7 +90,11 @@ namespace d04_tic_tac_toe
                 btnTiklanan.Enabled = false;//pasif
                 //kazandým mý? kontrol et
                 if (KontrolEt())
+                {
                     lblKazanan.Text = "1.OYUNCU KAZANDI";
+                    Bitir();
+                    return;
+                }
 
                 siraKimde = 1;
             }
@@ -78,12 +105,14 @@ namespace d04_tic_tac_toe
                 btnTiklanan.Enabled = false;
 
                 if (KontrolEt())
+                {
                     lblKazanan.Text = "2.OYUNCU KAZANDI";
+                    Bitir();
+                    return;
+                }
 
                 siraKimde = 0;
             }
-
-
 
             SiraGoster();
         }
