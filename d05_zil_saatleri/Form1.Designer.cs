@@ -115,7 +115,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(655, 379);
+            ClientSize = new Size(335, 379);
             Controls.Add(btnEkle);
             Controls.Add(txtSaat);
             Controls.Add(label1);

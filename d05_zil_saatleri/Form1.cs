@@ -26,14 +26,13 @@ namespace d05_zil_saatleri
 
                 if(kalanSure.Value.Hours == 0 && kalanSure.Value.Minutes == 0)
                 {
-
                     SystemSounds.Beep.Play();   
                 }
-
             }
             else
             { //deðer null gelmiþ
                 lblEnYakinSaat.Text = "En yakýn saat bulunamadý";
+                lblKalanSure.Text = "";
             }
         }
 

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d01_merhaba_dunya", "d01_merhaba_dunya\d01_merhaba_dunya.csproj", "{DAB098C3-9AE1-4B2D-A79A-7F3D13F2DD56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d01_merhaba_dunya", "d01_merhaba_dunya\d01_merhaba_dunya.csproj", "{DAB098C3-9AE1-4B2D-A79A-7F3D13F2DD56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d02_iki_sayi_topla", "d02_iki_sayi_topla\d02_iki_sayi_topla.csproj", "{AD0B59B4-BD10-46AA-8F79-CC4069388B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d02_iki_sayi_topla", "d02_iki_sayi_topla\d02_iki_sayi_topla.csproj", "{AD0B59B4-BD10-46AA-8F79-CC4069388B66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d03_askerlik_durumu", "d03_askerlik_durumu\d03_askerlik_durumu.csproj", "{B54AA0D6-D922-4FCF-B29C-E802EB0E40C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d03_askerlik_durumu", "d03_askerlik_durumu\d03_askerlik_durumu.csproj", "{B54AA0D6-D922-4FCF-B29C-E802EB0E40C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d04_tic_tac_toe", "d04_tic_tac_toe\d04_tic_tac_toe.csproj", "{2827CB77-9481-4A1B-84F6-CBA254BB873C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d04_tic_tac_toe", "d04_tic_tac_toe\d04_tic_tac_toe.csproj", "{2827CB77-9481-4A1B-84F6-CBA254BB873C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d05_zil_saatleri", "d05_zil_saatleri\d05_zil_saatleri.csproj", "{544AD134-F07A-4BDD-B9CE-08D0A33FB187}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d05_zil_saatleri", "d05_zil_saatleri\d05_zil_saatleri.csproj", "{544AD134-F07A-4BDD-B9CE-08D0A33FB187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d06_bilgi_formu", "d06_bilgi_formu\d06_bilgi_formu.csproj", "{7AB2B478-33E1-487B-B513-D30184180F4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{544AD134-F07A-4BDD-B9CE-08D0A33FB187}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{544AD134-F07A-4BDD-B9CE-08D0A33FB187}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{544AD134-F07A-4BDD-B9CE-08D0A33FB187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB2B478-33E1-487B-B513-D30184180F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB2B478-33E1-487B-B513-D30184180F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB2B478-33E1-487B-B513-D30184180F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB2B478-33E1-487B-B513-D30184180F4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
