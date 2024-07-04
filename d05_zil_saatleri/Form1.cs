@@ -12,6 +12,33 @@ namespace d05_zil_saatleri
             var saat = DateTime.Now;
             //lblSaat.Text = $"{saat:T}";
             lblSaat.Text = saat.ToString("T");
+
+            DateTime? bulunan = EnYakinSaatBul(saat);
+
+            if(bulunan!=null)//burada null gelmemiþ
+            {
+                lblEnYakinSaat.Text = bulunan?.ToString("T");
+            }
+            else
+            { //deðer null gelmiþ
+                lblEnYakinSaat.Text = "En yakýn saat bulunamadý";
+            }
+        }
+
+        //? null olabilir operatörü
+        DateTime? EnYakinSaatBul(DateTime aranan)
+        {
+            for(int i = 0; i < lbSaatler.Items.Count; i++) { 
+            
+                string str = lbSaatler.Items[i].ToString();
+                
+                DateTime oncekiSaat = DateTime.Parse(str);
+
+                if (aranan < oncekiSaat)
+                    return oncekiSaat;
+            }
+
+            return null;//uygun saati bulamadým
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -30,7 +57,7 @@ namespace d05_zil_saatleri
                 if (yeniSaat < oncekiSaat)
                 {
                     lbSaatler.Items.Insert(i, txtSaat.Text);
-                    return;//kenidnden sontraki hiç bir kod çalýþmaz
+                    return;//kendinden sontraki hiç bir kod çalýþmaz
                 }
             }
 

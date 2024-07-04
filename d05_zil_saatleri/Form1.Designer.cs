@@ -35,6 +35,7 @@
             label1 = new Label();
             txtSaat = new TextBox();
             btnEkle = new Button();
+            lblEnYakinSaat = new Label();
             SuspendLayout();
             // 
             // timer1
@@ -87,6 +88,17 @@
             btnEkle.UseVisualStyleBackColor = true;
             btnEkle.Click += btnEkle_Click;
             // 
+            // lblEnYakinSaat
+            // 
+            lblEnYakinSaat.AutoSize = true;
+            lblEnYakinSaat.Font = new Font("Segoe UI", 12F);
+            lblEnYakinSaat.ForeColor = Color.Red;
+            lblEnYakinSaat.Location = new Point(100, 67);
+            lblEnYakinSaat.Name = "lblEnYakinSaat";
+            lblEnYakinSaat.Size = new Size(65, 28);
+            lblEnYakinSaat.TabIndex = 0;
+            lblEnYakinSaat.Text = "label1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -96,6 +108,7 @@
             Controls.Add(txtSaat);
             Controls.Add(label1);
             Controls.Add(lbSaatler);
+            Controls.Add(lblEnYakinSaat);
             Controls.Add(lblSaat);
             Name = "Form1";
             Text = "Form1";
@@ -111,5 +124,6 @@
         private Label label1;
         private TextBox txtSaat;
         private Button btnEkle;
+        private Label lblEnYakinSaat;
     }
 }
