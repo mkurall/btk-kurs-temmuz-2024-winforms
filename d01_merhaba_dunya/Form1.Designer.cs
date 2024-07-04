@@ -37,7 +37,7 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(192, 255, 192);
-            button1.Location = new Point(122, 69);
+            button1.Location = new Point(122, 78);
             button1.Name = "button1";
             button1.Size = new Size(115, 50);
             button1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(32, 135);
+            label2.Location = new Point(32, 153);
             label2.Name = "label2";
             label2.Size = new Size(170, 20);
             label2.TabIndex = 3;
@@ -74,8 +74,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Gold;
-            ClientSize = new Size(274, 187);
+            BackColor = Color.FromArgb(0, 192, 192);
+            ClientSize = new Size(456, 297);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox1);

@@ -18,5 +18,7 @@ namespace d01_merhaba_dunya
             //Console.WriteLine($"Merhaba, {ad}");
             label2.Text = $"Merhaba, {ad}";
         }
+
+
     }
 }
