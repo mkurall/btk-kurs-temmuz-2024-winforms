@@ -37,7 +37,6 @@
             btnEkle = new Button();
             lblEnYakinSaat = new Label();
             lblKalanSure = new Label();
-            timer2 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // timer1
@@ -112,11 +111,6 @@
             lblKalanSure.TabIndex = 0;
             lblKalanSure.Text = "label1";
             // 
-            // timer2
-            // 
-            timer2.Interval = 1000;
-            timer2.Tick += timer2_Tick;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -145,6 +139,5 @@
         private Button btnEkle;
         private Label lblEnYakinSaat;
         private Label lblKalanSure;
-        private System.Windows.Forms.Timer timer2;
     }
 }

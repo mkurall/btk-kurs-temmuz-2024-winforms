@@ -1,3 +1,5 @@
+using System.Media;
+
 namespace d05_zil_saatleri
 {
     public partial class Form1 : Form
@@ -21,6 +23,13 @@ namespace d05_zil_saatleri
 
                 TimeSpan? kalanSure = bulunan - saat;
                 lblKalanSure.Text = $"-{kalanSure:hh\\:mm\\:ss}";
+
+                if(kalanSure.Value.Hours == 0 && kalanSure.Value.Minutes == 0)
+                {
+
+                    SystemSounds.Beep.Play();   
+                }
+
             }
             else
             { //deðer null gelmiþ
@@ -70,9 +79,6 @@ namespace d05_zil_saatleri
             lbSaatler.Items.Add(txtSaat.Text);
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
 
-        }
     }
 }
