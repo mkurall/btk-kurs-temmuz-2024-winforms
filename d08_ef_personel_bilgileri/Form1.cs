@@ -21,7 +21,7 @@ namespace d08_ef_personel_bilgileri
             //liste kutusuna baðla
             listBox1.DataSource = liste;
             //liste kutusuna göstereceði property leri söyle
-            listBox1.DisplayMember = "Ad";
+            listBox1.DisplayMember = "AdSoyad";
             //iliþkileri yöneteceðim anahtar
             listBox1.ValueMember = "Id";
         }
@@ -42,6 +42,27 @@ namespace d08_ef_personel_bilgileri
 
             //liste kutusunu yenilemek için
             Form1_Load(sender, e);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PersonelBilgi secili = listBox1.SelectedItem as PersonelBilgi;
+
+            if(secili!=null)
+            {
+                textBox1.Text = secili.Ad;
+                textBox2.Text = secili.Soyad;
+                textBox3.Text = secili.Telefon;
+                textBox4.Text = secili.Adres;
+            }
+            else
+            {
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+            }
+
         }
     }
 }

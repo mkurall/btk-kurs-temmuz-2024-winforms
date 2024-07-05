@@ -13,5 +13,13 @@ namespace d08_ef_personel_bilgileri.modeller
         public string Soyad { get; set; }
         public string? Telefon { get; set; }
         public string? Adres { get; set; }
+
+        public string AdSoyad
+        {
+            get
+            {
+                return Ad + " " + Soyad;
+            }
+        }
     }
 }
