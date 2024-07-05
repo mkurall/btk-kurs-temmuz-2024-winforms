@@ -2,6 +2,8 @@ namespace d06_bilgi_formu
 {
     public partial class Form1 : Form
     {
+        //globaL
+
         public Form1()
         {
             InitializeComponent();
@@ -12,6 +14,7 @@ namespace d06_bilgi_formu
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             Bilgiler bilgiler = new Bilgiler();
+          
 
             bilgiler.Ad = txtAd.Text;
             bilgiler.Soyad = txtSoyad.Text;
@@ -25,7 +28,6 @@ namespace d06_bilgi_formu
             string data = System.Text.Json.JsonSerializer.Serialize<Bilgiler>(bilgiler);
 
             File.WriteAllText("bilgiler.txt", data);
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,7 +43,6 @@ namespace d06_bilgi_formu
             cbEgitim.SelectedIndex = bilgiler.EgitimDurumu;
             mtxtTelefon.Text = bilgiler.Telefon;
             txtAdres.Text = bilgiler.Adres;
-
         }
     }
 }
