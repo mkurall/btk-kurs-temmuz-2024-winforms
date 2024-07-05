@@ -88,8 +88,9 @@
             // 
             tsmiYeni.Image = Properties.Resources.file;
             tsmiYeni.Name = "tsmiYeni";
-            tsmiYeni.Size = new Size(176, 26);
+            tsmiYeni.Size = new Size(224, 26);
             tsmiYeni.Text = "Yeni";
+            tsmiYeni.Click += tsmiYeni_Click;
             // 
             // tsmiAc
             // 
@@ -103,24 +104,25 @@
             // 
             kaydetToolStripMenuItem.Image = Properties.Resources.floppy_disk__1_;
             kaydetToolStripMenuItem.Name = "kaydetToolStripMenuItem";
-            kaydetToolStripMenuItem.Size = new Size(176, 26);
+            kaydetToolStripMenuItem.Size = new Size(224, 26);
             kaydetToolStripMenuItem.Text = "Kaydet";
+            kaydetToolStripMenuItem.Click += kaydetToolStripMenuItem_Click;
             // 
             // farklıKaydetToolStripMenuItem
             // 
             farklıKaydetToolStripMenuItem.Name = "farklıKaydetToolStripMenuItem";
-            farklıKaydetToolStripMenuItem.Size = new Size(176, 26);
+            farklıKaydetToolStripMenuItem.Size = new Size(224, 26);
             farklıKaydetToolStripMenuItem.Text = "Farklı Kaydet";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(173, 6);
+            toolStripMenuItem1.Size = new Size(221, 6);
             // 
             // çıkışToolStripMenuItem
             // 
             çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            çıkışToolStripMenuItem.Size = new Size(176, 26);
+            çıkışToolStripMenuItem.Size = new Size(224, 26);
             çıkışToolStripMenuItem.Text = "Çıkış";
             // 
             // düzenToolStripMenuItem
@@ -220,6 +222,7 @@
             toolStripButton1.Size = new Size(40, 48);
             toolStripButton1.Text = "Yeni";
             toolStripButton1.TextImageRelation = TextImageRelation.ImageAboveText;
+            toolStripButton1.Click += tsmiYeni_Click;
             // 
             // toolStripButton3
             // 
@@ -229,6 +232,7 @@
             toolStripButton3.Size = new Size(30, 48);
             toolStripButton3.Text = "Aç";
             toolStripButton3.TextImageRelation = TextImageRelation.ImageAboveText;
+            toolStripButton3.Click += tsmiAc_Click;
             // 
             // toolStripButton2
             // 
