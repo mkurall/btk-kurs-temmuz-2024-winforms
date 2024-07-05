@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d05_zil_saatleri", "d05_zil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d06_bilgi_formu", "d06_bilgi_formu\d06_bilgi_formu.csproj", "{7AB2B478-33E1-487B-B513-D30184180F4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d07_metin_editoru", "d07_metin_editoru\d07_metin_editoru.csproj", "{62D13AA2-42ED-4F32-B2D6-A67744F8EE7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "d07_metin_editoru", "d07_metin_editoru\d07_metin_editoru.csproj", "{62D13AA2-42ED-4F32-B2D6-A67744F8EE7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "d08_ef_personel_bilgileri", "d08_ef_personel_bilgileri\d08_ef_personel_bilgileri.csproj", "{F8EA06BC-2646-4FB8-951B-D84B6D8317D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{62D13AA2-42ED-4F32-B2D6-A67744F8EE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62D13AA2-42ED-4F32-B2D6-A67744F8EE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62D13AA2-42ED-4F32-B2D6-A67744F8EE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8EA06BC-2646-4FB8-951B-D84B6D8317D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EA06BC-2646-4FB8-951B-D84B6D8317D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EA06BC-2646-4FB8-951B-D84B6D8317D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8EA06BC-2646-4FB8-951B-D84B6D8317D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
