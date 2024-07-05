@@ -7,6 +7,9 @@ namespace d07_metin_editoru
         public Form1()
         {
             InitializeComponent();
+
+            //ayarlarý bir dosyadan geri okuyabilirsiniz
+
         }
 
         private void tsmiAc_Click(object sender, EventArgs e)
@@ -115,7 +118,7 @@ namespace d07_metin_editoru
             txtEditor.BackColor = form.SeciliArkaplanRengi;
             txtEditor.ForeColor = form.SeciliYaziRengi;
 
-
+            //ayarlarý bir dosyaya kayýt edebilirsiniz
 
         }
     }
