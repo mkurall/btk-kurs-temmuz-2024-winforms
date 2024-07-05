@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
             label2 = new Label();
             listBox1 = new ListBox();
             label3 = new Label();
@@ -60,6 +60,16 @@
             panel1.Size = new Size(816, 99);
             panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.user__1_;
+            pictureBox1.Location = new Point(12, 22);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(86, 62);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             label1.Dock = DockStyle.Fill;
@@ -70,16 +80,6 @@
             label1.TabIndex = 0;
             label1.Text = "Personel Bilgi Sistemi";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.user__1_;
-            pictureBox1.Location = new Point(12, 22);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(86, 62);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -206,6 +206,7 @@
             button3.TabIndex = 5;
             button3.Text = "Kaydet";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
@@ -229,6 +230,7 @@
             Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
