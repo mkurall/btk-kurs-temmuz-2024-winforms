@@ -63,6 +63,16 @@ namespace d07_metin_editoru.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btk {
+            get {
+                object obj = ResourceManager.GetObject("btk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap copy__1_ {
             get {
                 object obj = ResourceManager.GetObject("copy (1)", resourceCulture);

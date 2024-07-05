@@ -68,17 +68,55 @@ namespace d07_metin_editoru
             //MessageBox.Show("Uygulama kapatýlýyor....","Dikkat",MessageBoxButtons.YesNo);
             //MessageBox.Show("Uygulama kapatýlýyor....","Dikkat",MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            DialogResult cevap = MessageBox.Show("Deðiþiklikleri kayýt etmek ister misiniz?","Dikkat",
+            DialogResult cevap = MessageBox.Show("Deðiþiklikleri kayýt etmek ister misiniz?", "Dikkat",
                 MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
-            if(cevap == DialogResult.Yes)
+            if (cevap == DialogResult.Yes)
             {
                 kaydetToolStripMenuItem_Click(sender, EventArgs.Empty);
             }
-            else if(cevap == DialogResult.Cancel)
+            else if (cevap == DialogResult.Cancel)
             {
                 e.Cancel = true;//formu kapatmaktan vazgeçtim diye windows'a söylüyorum
             }
+        }
+
+        private void hakkýndaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //formun yeni bir örneðini oluþturdum
+            FrmHakkinda form = new FrmHakkinda();
+
+            //form.Show(); //arkada kalan forma týklanabilir
+            form.ShowDialog();
+        }
+
+        private void kesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtEditor.Cut();
+        }
+
+        private void kopyalaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtEditor.Copy();
+        }
+
+        private void yapýþtýrToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtEditor.Paste();
+        }
+
+        private void renkAyarlarýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFontVeRenk form = new FrmFontVeRenk(txtEditor);
+            form.ShowDialog();
+            //tamama basýldý 
+
+            txtEditor.Font = form.SeciliFont;
+            txtEditor.BackColor = form.SeciliArkaplanRengi;
+            txtEditor.ForeColor = form.SeciliYaziRengi;
+
+
+
         }
     }
 }

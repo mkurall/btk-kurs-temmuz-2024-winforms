@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             dosyaToolStripMenuItem = new ToolStripMenuItem();
             tsmiYeni = new ToolStripMenuItem();
@@ -138,6 +139,7 @@
             kesToolStripMenuItem.Name = "kesToolStripMenuItem";
             kesToolStripMenuItem.Size = new Size(188, 26);
             kesToolStripMenuItem.Text = "Kes";
+            kesToolStripMenuItem.Click += kesToolStripMenuItem_Click;
             // 
             // kopyalaToolStripMenuItem
             // 
@@ -145,6 +147,7 @@
             kopyalaToolStripMenuItem.Name = "kopyalaToolStripMenuItem";
             kopyalaToolStripMenuItem.Size = new Size(188, 26);
             kopyalaToolStripMenuItem.Text = "Kopyala";
+            kopyalaToolStripMenuItem.Click += kopyalaToolStripMenuItem_Click;
             // 
             // yapıştırToolStripMenuItem
             // 
@@ -152,6 +155,7 @@
             yapıştırToolStripMenuItem.Name = "yapıştırToolStripMenuItem";
             yapıştırToolStripMenuItem.Size = new Size(188, 26);
             yapıştırToolStripMenuItem.Text = "Yapıştır";
+            yapıştırToolStripMenuItem.Click += yapıştırToolStripMenuItem_Click;
             // 
             // toolStripMenuItem2
             // 
@@ -175,19 +179,20 @@
             // 
             ayarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { renkAyarlarıToolStripMenuItem, temalarToolStripMenuItem });
             ayarToolStripMenuItem.Name = "ayarToolStripMenuItem";
-            ayarToolStripMenuItem.Size = new Size(139, 26);
+            ayarToolStripMenuItem.Size = new Size(224, 26);
             ayarToolStripMenuItem.Text = "Ayarlar";
             // 
             // renkAyarlarıToolStripMenuItem
             // 
             renkAyarlarıToolStripMenuItem.Name = "renkAyarlarıToolStripMenuItem";
-            renkAyarlarıToolStripMenuItem.Size = new Size(177, 26);
-            renkAyarlarıToolStripMenuItem.Text = "Renk ayarları";
+            renkAyarlarıToolStripMenuItem.Size = new Size(229, 26);
+            renkAyarlarıToolStripMenuItem.Text = "Renk ve Font ayarları";
+            renkAyarlarıToolStripMenuItem.Click += renkAyarlarıToolStripMenuItem_Click;
             // 
             // temalarToolStripMenuItem
             // 
             temalarToolStripMenuItem.Name = "temalarToolStripMenuItem";
-            temalarToolStripMenuItem.Size = new Size(177, 26);
+            temalarToolStripMenuItem.Size = new Size(229, 26);
             temalarToolStripMenuItem.Text = "Temalar";
             // 
             // yardımToolStripMenuItem
@@ -203,6 +208,7 @@
             hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
             hakkındaToolStripMenuItem.Size = new Size(154, 26);
             hakkındaToolStripMenuItem.Text = "Hakkında";
+            hakkındaToolStripMenuItem.Click += hakkındaToolStripMenuItem_Click;
             // 
             // toolStrip1
             // 
@@ -256,6 +262,7 @@
             toolStripButton4.Name = "toolStripButton4";
             toolStripButton4.Size = new Size(29, 48);
             toolStripButton4.Text = "toolStripButton4";
+            toolStripButton4.Click += kesToolStripMenuItem_Click;
             // 
             // toolStripButton5
             // 
@@ -265,6 +272,7 @@
             toolStripButton5.Name = "toolStripButton5";
             toolStripButton5.Size = new Size(29, 48);
             toolStripButton5.Text = "toolStripButton5";
+            toolStripButton5.Click += kopyalaToolStripMenuItem_Click;
             // 
             // toolStripButton6
             // 
@@ -274,6 +282,7 @@
             toolStripButton6.Name = "toolStripButton6";
             toolStripButton6.Size = new Size(29, 48);
             toolStripButton6.Text = "toolStripButton6";
+            toolStripButton6.Click += yapıştırToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
@@ -288,6 +297,7 @@
             toolStripButton7.Name = "toolStripButton7";
             toolStripButton7.Size = new Size(29, 48);
             toolStripButton7.Text = "toolStripButton7";
+            toolStripButton7.Click += hakkındaToolStripMenuItem_Click;
             // 
             // statusStrip1
             // 
@@ -329,6 +339,7 @@
             Controls.Add(statusStrip1);
             Controls.Add(toolStrip1);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
