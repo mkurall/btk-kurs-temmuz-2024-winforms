@@ -19,7 +19,7 @@ namespace d07_metin_editoru
                 //kullanýcýnýn seçtiði dosyanýn adý 
                 string dosyaAdi = openFileDialog1.FileName;
                 string icerik = File.ReadAllText(dosyaAdi);
-                
+
                 acikOlanDosya = dosyaAdi;//sakla daHA SONRA kullan
 
                 Text = Path.GetFileName(dosyaAdi);
@@ -37,10 +37,12 @@ namespace d07_metin_editoru
 
         private void kaydetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(acikOlanDosya == null) //dosya adý boþ mu
+            if (acikOlanDosya == null) //dosya adý boþ mu
             {
                 //SaveFileDialog sýnýfýndan bir örnek oluþtur
                 SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "Metin Dosyalarý(*.txt)|*.txt|Tüm Dosyalar(*.*)|*.*";
+                dialog.DefaultExt = "*.txt";
 
                 DialogResult cevap = dialog.ShowDialog();
 
@@ -56,6 +58,26 @@ namespace d07_metin_editoru
             else //Dosya daha önce kayýtlý ise
             {
                 File.WriteAllText(acikOlanDosya, txtEditor.Text);
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //MessageBox.Show("Uygulama kapatýlýyor....");
+            //MessageBox.Show("Uygulama kapatýlýyor....","Dikkat");
+            //MessageBox.Show("Uygulama kapatýlýyor....","Dikkat",MessageBoxButtons.YesNo);
+            //MessageBox.Show("Uygulama kapatýlýyor....","Dikkat",MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            DialogResult cevap = MessageBox.Show("Deðiþiklikleri kayýt etmek ister misiniz?","Dikkat",
+                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if(cevap == DialogResult.Yes)
+            {
+                kaydetToolStripMenuItem_Click(sender, EventArgs.Empty);
+            }
+            else if(cevap == DialogResult.Cancel)
+            {
+                e.Cancel = true;//formu kapatmaktan vazgeçtim diye windows'a söylüyorum
             }
         }
     }

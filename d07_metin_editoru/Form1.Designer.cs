@@ -88,7 +88,7 @@
             // 
             tsmiYeni.Image = Properties.Resources.file;
             tsmiYeni.Name = "tsmiYeni";
-            tsmiYeni.Size = new Size(224, 26);
+            tsmiYeni.Size = new Size(176, 26);
             tsmiYeni.Text = "Yeni";
             tsmiYeni.Click += tsmiYeni_Click;
             // 
@@ -96,7 +96,7 @@
             // 
             tsmiAc.Image = Properties.Resources.open_folder__2_;
             tsmiAc.Name = "tsmiAc";
-            tsmiAc.Size = new Size(224, 26);
+            tsmiAc.Size = new Size(176, 26);
             tsmiAc.Text = "Aç";
             tsmiAc.Click += tsmiAc_Click;
             // 
@@ -104,25 +104,25 @@
             // 
             kaydetToolStripMenuItem.Image = Properties.Resources.floppy_disk__1_;
             kaydetToolStripMenuItem.Name = "kaydetToolStripMenuItem";
-            kaydetToolStripMenuItem.Size = new Size(224, 26);
+            kaydetToolStripMenuItem.Size = new Size(176, 26);
             kaydetToolStripMenuItem.Text = "Kaydet";
             kaydetToolStripMenuItem.Click += kaydetToolStripMenuItem_Click;
             // 
             // farklıKaydetToolStripMenuItem
             // 
             farklıKaydetToolStripMenuItem.Name = "farklıKaydetToolStripMenuItem";
-            farklıKaydetToolStripMenuItem.Size = new Size(224, 26);
+            farklıKaydetToolStripMenuItem.Size = new Size(176, 26);
             farklıKaydetToolStripMenuItem.Text = "Farklı Kaydet";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(221, 6);
+            toolStripMenuItem1.Size = new Size(173, 6);
             // 
             // çıkışToolStripMenuItem
             // 
             çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            çıkışToolStripMenuItem.Size = new Size(224, 26);
+            çıkışToolStripMenuItem.Size = new Size(176, 26);
             çıkışToolStripMenuItem.Text = "Çıkış";
             // 
             // düzenToolStripMenuItem
@@ -316,7 +316,9 @@
             // 
             // openFileDialog1
             // 
+            openFileDialog1.DefaultExt = "*.txt";
             openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.Filter = "Metin Dosyaları(*.txt)|*.txt|Tüm Dosyalar(*.*)|*.*";
             // 
             // Form1
             // 
@@ -330,6 +332,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             toolStrip1.ResumeLayout(false);
